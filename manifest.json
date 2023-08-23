@@ -3,9 +3,6 @@
   "name": "Hide Chromium PGO/AFDO commits on Gitiles",
   "version": "1.0",
   "description": "Hides Chromium PGO/AFDO autoroller commits on Gitiles",
-  "permissions": [
-    "activeTab"
-  ],
   "icons": {
     "48": "icon48.png",
     "128": "icon128.png"
