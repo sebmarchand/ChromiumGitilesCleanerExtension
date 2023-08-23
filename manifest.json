@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Hide Chromium PGO/AFDO commits on gitiles",
+  "version": "1.0",
+  "description": "Hides PGO/AFDO autoroller commits on gitiles",
+  "permissions": [
+      "activeTab",
+      "https://chromium.googlesource.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://chromium.googlesource.com/chromium/src/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
+
