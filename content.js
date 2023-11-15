@@ -1,7 +1,13 @@
 function hideElements() {
   const listItems = document.querySelectorAll('.CommitLog-item');
-  
-  const regexPatterns = [/Roll .* PGO Profile/i, /Roll .* AFDO/i];
+
+  const regexPatterns = [
+    /Roll .* PGO Profile/i,
+    /Roll .* AFDO/i,
+    /Incrementing VERSION to .*/i,
+    /Automatic update from google3.*/i,
+    /Automated Commit.*/i
+  ];
 
   listItems.forEach((item) => {
     const textContent = item.textContent;
